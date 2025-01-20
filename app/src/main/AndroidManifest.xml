@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AssistHub"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+
+        <!-- BroadcastReceiver for SMS reception -->
+        <receiver android:name=".helper.BroadcastReceiverExample"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.assisthub.SMS_RECEIVED_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.UpdateNewPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.VerificationCode"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ReturnMoney"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.confirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.VerifyNumber"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

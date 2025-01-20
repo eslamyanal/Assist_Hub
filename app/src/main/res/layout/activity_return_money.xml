@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReturnMoney"
+    android:background="@color/background"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/return_money"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refund Request"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lineHeight="40dp"
+            android:padding="10dp"
+            android:text="We appreciate your decision, so we offer you the option of a refund within 72 hours from the date of order removal through the bank."
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Amount paid :"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/RefundAmount"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+
+
+        <!--    <a href="https://www.flaticon.com/free-icons/money" title="money icons">Money icons created by Kiranshastry - Flaticon</a>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/AccountNumber"
+            android:layout_margin="10dp"
+            app:counterEnabled="true"
+            app:startIconDrawable="@drawable/bank"
+            app:counterMaxLength="14"
+            android:hint="Bank Account Number :"
+            android:textColorHint="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:maxLength="14"
+                android:layout_height="match_parent"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:id="@+id/sendButton"
+            android:textColor="@color/white"
+            android:backgroundTint="#03A9F4"
+            android:layout_margin="10dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AssistHub" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:textColor">#FFFFFF</item> <!-- Text color for each dropdown item -->
+    </style>
+
+    <style name="Theme.AssistHub" parent="Base.Theme.AssistHub" />
+</resources>
+
+
+<!--
+https://developer.android.com/develop/ui/views/animations/transitions/start-activity
+-->

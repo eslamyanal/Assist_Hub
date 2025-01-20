@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#F6F6F6</color>
+    <color name="red">#EF0505</color>
+    <color name="main">#03A9F4</color>
+    <color name="grey">#666666</color>"
+    <color name="text_email">#007AFF</color>
+    <color name="color_input">#607D8B</color>
+    <color name="toolbarBg">#7E99A3</color>
+    <color name="itemColor">#B3E5FC</color>
+    <color name="aboutUs">#8BB2C8</color>
+
+
+
+</resources>

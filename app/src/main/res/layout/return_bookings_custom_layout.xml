@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="40dp"
+        android:visibility="gone"
+        android:id="@+id/cardReturnBooking"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/itemColor"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutReturnBooking"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_hospitalCard"
+                android:text="@string/name_hospital"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SectionCard"
+                android:text="name section"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DoctorOrBedCard"
+                android:text="doctor name or bed"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="period"
+                android:visibility="gone"
+                android:id="@+id/periodCard"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="10dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dateBed"
+                android:visibility="gone"
+                android:id="@+id/DateBedCard"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="state"
+                android:id="@+id/stateCard"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancle"
+                android:backgroundTint="#03A9F4"
+                android:id="@+id/cancelButtonCard"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="end"
+                />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

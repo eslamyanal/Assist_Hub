@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.VerificationCode">
+
+
+
+
+    <ImageView
+        android:id="@+id/hex_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Verification Image"
+        android:src="@drawable/verification_logo"
+        android:layout_margin="16dp"
+        android:layout_gravity="center" />
+
+
+        <TextView
+            android:id="@+id/verification_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_the_4_digits_that_we_have_sent_via_the_phone_number_962"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/otp_input_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="48dp"
+            android:layout_height="75dp"
+            android:id="@+id/number1"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="48dp"
+            android:layout_height="75dp"
+            android:id="@+id/number2"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="48dp"
+            android:layout_height="75dp"
+            android:id="@+id/number3"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="48dp"
+            android:layout_height="75dp"
+            android:id="@+id/number4"
+            android:layout_margin="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resend_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have a code? Re-send"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/main"
+        android:layout_margin="10dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/confirm_button_verification"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E88E5"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

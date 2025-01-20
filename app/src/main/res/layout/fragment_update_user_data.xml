@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FullName"
+        app:startIconDrawable="@drawable/icon_person"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/FullName"
+            android:padding="8dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            tools:ignore="VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PhoneNumber"
+        app:prefixText="+962"
+        app:startIconDrawable="@drawable/phone"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:maxLength="10"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/PhoneNumber"
+            android:textColorHint="@color/white"
+            android:inputType="phone"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            tools:ignore="VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        app:startIconDrawable="@drawable/password"
+        app:startIconTint="@color/white"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/white"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/white">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nationality"
+        android:enabled="false"
+        app:startIconDrawable="@drawable/person_identity_ic"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_enenable_edittext"
+            android:hint="Nationality"
+            android:padding="8dp"
+            android:inputType="number"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nationality_Number"
+        app:startIconDrawable="@drawable/person_identity_ic"
+        app:startIconTint="@color/white"
+        android:enabled="false"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_enenable_edittext"
+            android:hint="@string/NationalityNumber"
+            android:padding="8dp"
+            android:inputType="number"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/updatedata"
+            android:backgroundTint="@color/main"
+            android:layout_margin="10dp"
+            android:text="update"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/main"
+            android:id="@+id/cancel_buttonUpdate"
+            android:layout_margin="10dp"
+            android:text="cancel"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">AssistHub</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="Individual">Individual</string>
+    <string name="Government">Government</string>
+
+    <string name="SignUp">Sign Up</string>
+    <string name="Login">Login</string>
+    <string name="FullName">Full Name</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="Password">Password</string>
+    <string name="upload">Upload your files</string>
+    <string name="haveAcc">Already have an account? </string>
+    <string name="Military">Military</string>
+    <string name="Civilian">Civilian</string>
+    <string name="No_file_chosen">No file chosen</string>
+    <string name="NationalityNumber">Nationality Number</string>
+    <string name="Passport_Number">Passport_Number</string>
+    <string name="Upload_your_files">Upload your files </string>
+    <string name="ChooseFile">Choose File</string>
+    <string name="CurrentRegion">Current Region</string>
+    <string name="TypeOfHospital">Type Of Hospital</string>
+    <string name="home">Home</string>
+    <string name="name_hospital">Name Hospital</string>
+    <string name="show_doctor_sections">Doctor sections</string>
+    <string name="show_bed_sections">Bed sections</string>
+    <string name="BookYourService">Book your service</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About us</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="approved_bookings">Approved bookings</string>
+    <string name="booking_requests">Booking requests</string>
+    <string name="rejected_bookings">Rejected bookings</string>
+    <string name="enter_the_time_you_want">Enter the time you want</string>
+    <string name="confirmMsg">Your reservation has been successfully requested, please check your reservations section after a short period of time.</string>
+    <string name="enter_your_bank_account">Enter your bank account</string>
+    <string name="your_card_number">Your Card Number</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="note"> If payment is made and the order is confirmed, the money will not be refunded upon cancellation after 24 hours</string>
+    <string name="raneem_khalid_irtahi">Raneem Khalid Irtahi</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="introTerms">Welcome to Assist Hub! These Terms govern your use of our app. By accessing or using Assist Hub, you agree to these Terms. If you disagree, please do not use the app</string>
+    <string name="AcceptanceInfo">By using Assist Hub, you confirm that you have read and agreed to these Terms and our Privacy Policy. We may update these Terms at any time, with changes communicated through the app or your phone number. Continued use indicates your acceptance of the updates.</string>
+    <string name="UserResponsibilitiesInfo">Users must be 18 or older, or have parental consent if under 18. Accurate information is required during account creation, and users are responsible for securing their credentials and account activities.</string>
+
+    <string name="SubscriptionsInfo">Assist Hub offers premium features via a subscription plan: \n\nSubscription fees for VIP users are billed annually, while casual users follow a standard payment process. The reservation system is a 12-hour reservation for the first shift and another 12 hours for the second shift (hotel reservation system). Payment for subscriptions will be all the amount upfront. If you cancel your subscription or reservation before 24 hours, the amount paid will be fully refunded after 72 hours.</string>
+    <string name="PrivacyInfo">By using Assist Hub, you agree to our Privacy Policy regarding data collection, storage, and use. Your data is never sold to third parties.</string>
+    <string name="ThirdPartyInfo">The app integrates with third-party platforms like Bazily, Nahao, and Kixc. By using these integrations, you agree to their respective terms and conditions.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_info">Don’t hesitate to contact us whether you have a suggestion on our improvement, a complaint to discuss or an issue to solve.</string>
+    <string name="dr_khalid_alkharabsheh">Dr. Khalid Alkharabsheh</string>
+    <string name="raneem_waleed_alhorany_se">Raneem Waleed Alhorany</string>
+    <string name="islam_yanal_abuara_cis">Islam Yanal AbuAra</string>
+    <string name="dana_taha_almasaafe_cis">Dana Taha Almasaafe</string>
+    <string name="raneem_khalid_irtahi_se">Raneem Khalid Irtahi</string>
+    <string name="project_supervisor">Project supervisor</string>
+    <string name="management_developer">Management,developer</string>
+    <string name="front_end_developer">front end developer</string>
+    <string name="designer">designer</string>
+    <string name="documentation_specialist">documentation specialist</string>
+    <string name="horany_email">32101002058@std.bau.edu.jo</string>
+    <string name="khalid_email">khalidkh@bau.edu.jo</string>
+    <string name="eslam_eamil">32001003065@std.bau.edu.jo</string>
+    <string name="dana_email">32101003027@std.bau.edu.jo</string>
+    <string name="raneem_email">32001002012@std.edu.jo</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="assist_hub">Assist Hub!</string>
+    <string name="missionSpalch">Revolutionizing Healthcare Access, Empowering communities with seamless hospital reservations, expert medical booking, and a platform for life-saving contributions.</string>
+    <string name="verify_phone_number">Verify phone number</string>
+    <string name="enter_your_mobile_number_then_we_will_send_you_a_code_to_reset_your_password">Enter your mobile number then we will send you a code to reset your password</string>
+    <string name="enter_the_4_digits_that_we_have_sent_via_the_phone_number_962">Enter the 4-digits that we have sent via the phone number +962********</string>
+    <string name="enter_new_password">Enter new </string>
+    <string name="create_a_new_password_for_your_account_make_sure_it_s_strong_and_easy_for_you_to_remember">Create a new password for your account. Make sure it\'s strong and easy for you to remember!</string>
+    <string name="password"> password</string>
+    <string name="username">UserName</string>
+
+
+</resources>

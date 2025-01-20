@@ -1,0 +1,12 @@
+<resources>
+    <!-- Spinner style for text color -->
+    <style name="SpinnerStyle">
+        <item name="android:textColor">#FFFFFF</item> <!-- Text color for selected item -->
+        <item name="android:popupBackground">@drawable/rounded_edittext</item> <!-- Dropdown background -->
+    </style>
+
+
+    <style name="SpinnerItemStyle">
+        <item name="android:textColor">#FFFFFF</item> <!-- Text color for each dropdown item -->
+    </style>
+</resources>

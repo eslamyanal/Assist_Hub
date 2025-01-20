@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <!--    <a href="https://www.flaticon.com/free-icons/terms-and-conditions" title="terms and conditions icons">Terms and conditions icons created by Ehtisham Abid - Flaticon</a>-->
+
+    <group >
+
+        <item
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"
+            android:id="@+id/nav_home"/>
+
+        <item
+            android:title="@string/booking_requests"
+            android:icon="@drawable/ic_reserved"
+            android:id="@+id/BookingRequests"/>
+
+
+        <!--  <a href="https://www.flaticon.com/free-icons/approved" title="approved icons">Approved icons created by Freepik - Flaticon</a>-->
+        <item
+            android:title="@string/approved_bookings"
+            android:icon="@drawable/approvedbookings"
+            android:id="@+id/ApprovedBookings"/>
+
+
+        <item
+            android:title="Requests Rejected"
+            android:icon="@drawable/requests_rejected_icon"
+            android:id="@+id/RequestsRejected"/>
+
+
+        <item
+            android:title="volunteer"
+            android:icon="@drawable/volunteer"
+            android:id="@+id/volunteer"/>
+
+
+
+
+    </group>
+    <!-- to divider to menu items you have to create new menu inside item tag -->
+    <item android:title="@string/account">
+        <menu>
+
+
+            <item
+                android:title="@string/profile"
+                android:icon="@drawable/icon_person"
+                android:id="@+id/Profile_navigationView" />
+
+            <item
+                android:title="@string/about_us"
+                android:id="@+id/About_us_navigationView"
+                android:icon="@drawable/about_us"/>
+
+            <item
+                android:title="Contact us"
+                android:id="@+id/contact_us"
+                android:icon="@drawable/contact_us"/>
+
+            <item
+                android:title="terms and condition"
+                android:icon="@drawable/termsandcondition"
+                android:id="@+id/TermsAndCondition"/>
+
+            <item
+                android:title="@string/logout"
+                android:icon="@drawable/ic_logout"
+                android:id="@+id/logout_navigationView"/>
+
+
+        </menu>
+
+    </item>
+
+</menu>

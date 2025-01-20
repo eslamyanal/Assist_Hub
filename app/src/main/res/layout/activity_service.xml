@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ServiceActivity"
+    android:background="@color/background"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarService"
+            android:padding="10dp"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:elevation="4dp"
+            android:background="@color/toolbarBg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/linerLayoutService"
+            android:layout_below="@id/toolbarService"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_doctor_sections"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+                <Spinner
+                    android:id="@+id/doctor_sections"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="12dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="16dp"
+                    style="@style/SpinnerStyle"
+                    android:background="@drawable/rounded_edittext"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="@string/show_bed_sections" />
+                <Spinner
+                    android:id="@+id/bed_sections"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="12dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="16dp"
+                    style="@style/SpinnerStyle"
+                    android:background="@drawable/rounded_edittext"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@id/linerLayoutService"
+            android:id="@+id/TextViewService"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/BookYourService"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="italic|bold"
+            android:textSize="25sp"
+            />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/TextViewService"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/frameLayoutService"
+                android:layout_height="match_parent"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frameLayoutServiceMenu"
+            android:layout_marginTop="60dp"
+            android:layout_height="match_parent"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/SpalshScreenLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+
+    <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="250dp"
+         android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/welcome_to"
+                android:textStyle="bold|italic"
+                android:textSize="30sp"
+                android:textColor="@color/black" />
+
+    <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/assist_hub"
+                android:textStyle="bold|italic"
+                android:textSize="30sp"
+                android:textColor="@color/main"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="@string/missionSpalch"
+        android:textSize="14sp"
+        android:lineHeight="30dp"
+        android:textColor="@color/black" />
+
+    <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="16dp"
+           android:gravity="center"
+           android:layout_margin="10dp"
+           android:text="Thank you for being part of our journey!"
+           android:textStyle="bold"
+           android:textSize="14sp"
+           android:textColor="#0078FF" />
+
+
+    </LinearLayout>

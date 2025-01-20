@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".Activity.SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@color/background">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logo"
+            android:layout_width="129dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SignUp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FullName"
+            app:startIconDrawable="@drawable/icon_person"
+            app:startIconTint="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/FullName"
+                android:padding="8dp"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                tools:ignore="VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/PhoneNumber"
+            app:prefixText="+962"
+            app:startIconDrawable="@drawable/phone"
+            app:startIconTint="@color/white"
+            android:textColorHint="@color/white"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            android:layout_marginTop="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:maxLength="10"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/PhoneNumber"
+                android:textColorHint="@color/white"
+                android:inputType="phone"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                tools:ignore="VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Password"
+            app:startIconDrawable="@drawable/password"
+            app:startIconTint="@color/white"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+            android:layout_marginTop="4dp"
+            android:textColorHint="@color/white">
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Spinner
+                android:id="@+id/spinnerNationality"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="12dp"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="16dp"
+                style="@style/SpinnerStyle"
+                android:background="@drawable/rounded_edittext"
+                />
+
+        <LinearLayout
+                  android:id="@+id/layoutfornon_jo"
+                  android:visibility="gone"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_margin="16dp"
+                  android:layout_gravity="center">
+
+                  <com.google.android.material.textfield.TextInputLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/Passport_Number"
+                      app:startIconDrawable="@drawable/person_identity_ic"
+                      app:startIconTint="@color/white"
+                      android:textColorHint="@color/white"
+                      android:layout_marginTop="8dp">
+
+                      <com.google.android.material.textfield.TextInputEditText
+                          android:layout_width="match_parent"
+                          android:layout_height="60dp"
+                          android:textSize="16sp"
+                          android:background="@drawable/rounded_edittext"
+                          android:hint="@string/Passport_Number"
+                          android:padding="8dp"
+                          android:inputType="number"
+                          android:textColor="@color/white"/>
+                  </com.google.android.material.textfield.TextInputLayout>
+
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Upload_your_files"
+                      android:padding="12dp"
+                      android:textColor="@color/black"
+                      android:textStyle="bold"
+                      android:textSize="24sp"
+                      android:gravity="center"
+                      android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="official documents type"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+                  <RadioGroup
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:id="@+id/Health_InsuranceForNonJO"
+                      android:orientation="vertical">
+                      <RadioButton
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="12dp"
+                          android:id="@+id/ALMOfauadia_Unhcr"
+                          android:text="(al mofauadia )  UNHCR "
+                          tools:ignore="HardcodedText"/>
+                      <RadioButton
+                          android:padding="12dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/ForeignMedicalTourism"
+                          android:text="Foreign / Medical tourism"
+                          tools:ignore="HardcodedText" />
+                      <RadioButton
+                          android:padding="12dp"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/officialDocumentsFromTheCountry"
+                          android:text=" official documents from the country "
+                          tools:ignore="HardcodedText" />
+                  </RadioGroup>
+
+              </LinearLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:id="@+id/layoutfor_jo"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nationality_Number"
+        app:startIconDrawable="@drawable/person_identity_ic"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="@string/NationalityNumber"
+            android:padding="8dp"
+            android:inputType="number"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="  Type of health insurance"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/Health_InsuranceForJO"
+        android:orientation="horizontal">
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="12dp"
+           android:id="@+id/MilitaryRadioButton"
+           android:text="@string/Military"/>
+
+        <RadioButton
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Civilian"
+            android:text="@string/Civilian"/>
+
+        <RadioButton
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NoHealthInsurance"
+            android:text="No health insurance"/>
+
+    </RadioGroup>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/uploadLayout"
+            android:layout_margin="20dp">
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ChooseFile"
+                android:textColor="@color/white"
+                android:backgroundTint="#03A9F4"
+                android:layout_margin="15dp"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/filePathTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/No_file_chosen"
+                android:layout_margin="15dp"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/signUpButton"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#03A9F4"
+            android:gravity="center"
+            android:text="@string/SignUp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="14dp"
+            tools:ignore="VisualLintButtonSize" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:id="@+id/loginLayout"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/haveAcc"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Login"
+                android:textColor="#607D8B"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
