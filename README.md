@@ -24,6 +24,9 @@ It's a graduation project. This project introduces 'Assist Hub', a software appl
 fast, which contributes to making people’s lives better and simpler. ‘Assist Hub' aims to revolutionize the way individuals interact with the main and vital sector in Jordan, which is 
 the health sector, by creating a seamless experience where users can easily access services, using the Agile methodology and the scrum-module framework. Thus, enhancing their connection to and service to the community. These are technological services that aim to organize and improve access to services in the medical field, encourage volunteer work, and indirectly enhance logistical support within the region. Our goal is to achieve excellence and contribute to the overall improvement and progress of our community and country
 
+🌟 Why AssistHub?
+AssistHub provides an efficient way to manage emergency medical services and boost community involvement through volunteering, making a meaningful impact in both healthcare and social work sectors.
+
 [project graduation .pdf](https://github.com/user-attachments/files/18480506/project.graduation.pdf)
 
 [Assist Hub .pdf](https://github.com/user-attachments/files/18480515/Assist.Hub.pdf)
